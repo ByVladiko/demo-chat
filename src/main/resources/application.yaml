@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demo-chat
+    username: postgres
+    password: pass
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        show-sql: true
+        ddl-auto: validate
+security:
+  jwt:
+    access:
+      secret: supermegasecret
+      expire-minutes: 5
